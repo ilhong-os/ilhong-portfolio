@@ -1,117 +1,138 @@
 .video-list {
-    width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 .video-card {
-    background-color: #dfdfdf;
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #f3b5b5;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .video-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .thumb {
-    position: relative;
+  position: relative;
 }
 .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    color: #fff;
-    font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
 }
 .card-info {
-    padding: 20px;
+  padding: 20px;
 }
 .card-info h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .card-info p {
-    color: #666;
+  color: #666;
+}
+.thumb {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.thumb iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+.play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 /* modal */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    display: none;
-    padding: 10% 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  display: none;
+  padding: 10% 0;
 }
 .modal.active {
-    display: flex;
+  display: flex;
 }
 .modal-content {
-    width: 90%;
-    max-height: calc(100vh - 100px);
-    position: relative;
-    width: 800px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #fff;
+  width: 90%;
+  max-height: calc(100vh - 100px);
+  position: relative;
+  width: 800px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f1d9c8;
 }
 #player {
-    width: 100%;
-    /* height:500px; */
-    aspect-ratio: 16/9;
-    border: none;
-    margin-top: 10px;
+  width: 100%;
+  /* height:500px; */
+  aspect-ratio: 16/9;
+  border: none;
+  margin-top: 10px;
 }
 .close {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-weight: bold;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
 }
 #content-title {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .detail-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 20px;
-    gap: 15px;
-    max-height: 250px;
-    overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  gap: 15px;
+  max-height: 250px;
+  overflow-y: auto;
 }
 /* 스크롤바 전체 */
 .detail-list::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 /* 스크롤바 배경 */
 .detail-list::-webkit-scrollbar-track {
-    background: #c609ec;
-    border-radius: 10px;
+  background: #d776eb;
+  border-radius: 10px;
 }
 /* 스크롤바 막대 */
 .detail-list::-webkit-scrollbar-thumb {
-    background: #f35207;
-    border-radius: 10px;
+  background: #f35207;
+  border-radius: 10px;
 }
 .detail-list div {
-    background-color: #dfdfdf;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: #ffff;
+  padding: 15px;
+  border-radius: 10px;
 }
 .detail-list p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
