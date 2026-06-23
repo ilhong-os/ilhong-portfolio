@@ -111,7 +111,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin-top: 20px;
   gap: 15px;
-  max-height: 250px;
+  max-height: 180px;
   overflow-y: auto;
 }
 /* 스크롤바 전체 */
@@ -135,4 +135,4 @@
 }
 .detail-list p {
   margin-top: 10px;
-}
+}`

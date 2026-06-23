@@ -150,7 +150,6 @@
                 src="images/edited-photo (4).png"
                 alt="GitHub"
                 class="skill__icon-img"
-                style="filter: invert(0.3)"
               />
             </div>
           </div>
@@ -165,7 +164,7 @@
       <div class="video-list">
         <div
           class="video-card"
-          data-video="https://youtu.be/0XErimtxNSs"
+          data-video="https://www.youtube.com/embed/0XErimtxNSs?si=bYyxib1YwVJHtd0_"
           data-title="공모전 영상"
           data-desc="정유재란 남원성 전투 및 만인의사 추모 영상 입니다."
           data-period="2026.05 ~ 2026.06"
@@ -176,7 +175,26 @@
           data-goal="정보 전달력을 높이는 모션그래픽 제작(어게인)"
         >
           <div class="thumb">
-            <img src="https://picsum.photos/500/300?1" />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/0XErimtxNSs?si=bYyxib1YwVJHtd0_"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <!-- <div class="play-btn">▶</div> -->
           </div>
           <div class="card-info">
             <h3>공모전 영상</h3>
@@ -224,7 +242,7 @@
         </div>
         <div
           class="video-card"
-          data-video="https://www.youtube.com/embed/ysz5S6PUM-U"
+          data-video="https://www.youtube.com/embed/5JEISyh1PF8"
           data-title="유튜브 콘텐츠 편집"
           data-desc="예능형 자막과 효과를 적용한 콘텐츠 편집 영상입니다."
           data-period="2026.05 ~ 2026.06"
@@ -235,9 +253,26 @@
           data-goal="정보 전달력을 높이는 모션그래픽 제작"
         >
           <div class="thumb">
-            <img src="https://picsum.photos/500/300?3" />
-            <div class="play-btn">▶</div>
+            <iframe
+              src="https://www.youtube.com/embed/5JEISyh1PF8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+
+            <!-- <div class="play-btn">▶</div> -->
           </div>
+
           <div class="card-info">
             <h3>유튜브 콘텐츠 편집</h3>
             <p>예능형 편집 및 자막 디자인</p>
@@ -294,20 +329,25 @@
       <div class="docs__grid">
         <div class="docs__item">
           <p class="docs__label">자기소개서</p>
-          <a href="#" class="arrow-link">→ 링크를 걸 예정</a>
-          <div class="docs__preview docs__preview--white">
-            <div class="docs__lines">
-              <span></span><span></span><span></span><span></span><span></span>
+          <a href="images/자기소개서1.pdf" class="arrow-link" download>
+            <div class="docs__preview docs__preview--white">
+              <div class="docs__lines">
+                <span></span><span></span><span></span><span></span
+                ><span></span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="docs__item">
           <p class="docs__label">이력서</p>
-          <div class="docs__preview docs__preview--yellow">
-            <div class="docs__lines">
-              <span></span><span></span><span></span><span></span><span></span>
+          <a href="images/이력서1.pdf" class="arrow-link" download>
+            <div class="docs__preview docs__preview--yellow">
+              <div class="docs__lines">
+                <span></span><span></span><span></span><span></span
+                ><span></span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
