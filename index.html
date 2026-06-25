@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="images/IMG_1034.jpeg" />
+    <link rel="icon" href="images/logo.jpg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/video.css" />
     <script src="js/video.js"></script>
@@ -19,7 +19,8 @@
     <!-- NAV -->
     <nav class="nav" id="mainNav">
       <div class="nav__left">
-        <span class="nav__tag">백일홍 포트폴리오</span>
+        <img src="images/logo.jpg" />
+        <span class="nav__tag img">ILHONG Portfolio </span>
       </div>
       <ul class="nav__links">
         <li><a href="#intro">Introduction</a></li>
@@ -160,11 +161,11 @@
     <!-- PROJECT -->
     <!--1번째-->
     <section class="project" id="project">
-      <h2 class="section-title">-project-</h2>
+      <h2 class="section-title">-video project-</h2>
       <div class="video-list">
         <div
           class="video-card"
-          data-video="https://www.youtube.com/embed/0XErimtxNSs?si=bYyxib1YwVJHtd0_"
+          data-video="https://www.youtube.com/embed/0XErimtxNSs?si=onNz_3-8DVB1PoBT"
           data-title="공모전 영상"
           data-desc="정유재란 남원성 전투 및 만인의사 추모 영상 입니다."
           data-period="2026.05 ~ 2026.06"
@@ -172,13 +173,13 @@
           data-skill="Premiere Pro, After Effects, AI 이미지 생성"
           data-feature="모션 효과, 사운드생성, 이미지생성"
           data-solve="모션적용 한 것을 더 자연스럽게 생성"
-          data-goal="정보 전달력을 높이는 모션그래픽 제작(어게인)"
+          data-goal="정유재란 남원성 전투 영상"
         >
           <div class="thumb">
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/0XErimtxNSs?si=bYyxib1YwVJHtd0_"
+              src="https://www.youtube.com/embed/0XErimtxNSs?si=onNz_3-8DVB1PoBT"
               title="YouTube video player"
               frameborder="0"
               allow="
@@ -201,6 +202,7 @@
             <p>Premiere Pro 활용</p>
           </div>
         </div>
+
         <!--2번째-->
         <div
           class="video-card"
@@ -238,6 +240,46 @@
           <div class="card-info">
             <h3>모션그래픽 프로젝트</h3>
             <p>After Effects 모션그래픽</p>
+          </div>
+        </div>
+
+        <!--3번째-->
+        <div
+          class="video-card"
+          data-video="https://www.youtube.com/embed/5JEISyh1PF8"
+          data-title="유튜브 콘텐츠 편집"
+          data-desc="예능형 자막과 효과를 적용한 콘텐츠 편집 영상입니다."
+          data-period="2026.05 ~ 2026.06"
+          data-role="기획 · 촬영 · 편집"
+          data-skill="Premiere Pro, After Effects"
+          data-feature="트랜지션 효과, 색보정, 자막 디자인"
+          data-solve="촬영 원본의 색감 차이를 Lumetri Color를 활용해 통일감 있게 보정"
+          data-goal="정보 전달력을 높이는 모션그래픽 제작"
+        >
+          <div class="thumb">
+            <iframe
+              src="https://www.youtube.com/embed/5JEISyh1PF8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+
+            <!-- <div class="play-btn">▶</div> -->
+          </div>
+
+          <div class="card-info">
+            <h3>유튜브 콘텐츠 편집</h3>
+            <p>예능형 편집 및 자막 디자인</p>
           </div>
         </div>
         <div
@@ -436,6 +478,20 @@
         </div>
       </div>
     </footer>
+
     <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
