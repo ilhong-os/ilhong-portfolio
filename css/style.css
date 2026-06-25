@@ -355,7 +355,10 @@ h2 {
   font-size: 0.8rem;
   color: var(--mid);
 }
-
+.project img{
+  width: 100%;
+  object-fit: cover;
+}
 /* ---- DOCS ---- */ /*자기소개서&이력서*/
 .docs {
   padding-top: 50px;
